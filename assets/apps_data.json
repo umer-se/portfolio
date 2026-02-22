@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Cleaner: Phone Storage Cleanup",
+    "platform": "iOS",
+    "description": "An effortless gallery cleanup tool that helps you declutter your phone storage by deleting duplicate photos and videos using a fast, swipe-to-sort interface.",
+    "link": "https://apps.apple.com/pk/app/cleaner-phone-storage-cleanup/id6445917429",
+    "iconFile": "assets/icons/cleaner__phone_storage_cleanup.png"
+  },
+  {
+    "name": "Email Cleaner: Inbox Cleaner",
+    "platform": "iOS",
+    "description": "A productivity app designed to help you clean your inbox and free up space fast.",
+    "link": "https://apps.apple.com/jm/app/email-cleaner-inbox-cleaner/id6748441116",
+    "iconFile": "assets/icons/email_cleaner__inbox_cleaner.png"
+  },
+  {
+    "name": "Smart Printer & Scanner Mobile",
+    "platform": "iOS",
+    "description": "A mobile application designed to help users easily print and scan documents smartly and efficiently.",
+    "link": "https://apps.apple.com/kw/app/smart-printer-scanner-mobile/id6741894309",
+    "iconFile": "assets/icons/smart_printer___scanner_mobile.png"
+  },
+  {
+    "name": "QR Code Reader: Scan & Create",
+    "platform": "iOS",
+    "description": "A utility app that allows users to quickly scan, read, and create their own custom QR codes.",
+    "link": "https://apps.apple.com/pk/app/qr-code-reader-scan-create/id1537745547",
+    "iconFile": "assets/icons/qr_code_reader__scan___create.png"
+  },
+  {
+    "name": "AI Email Writer & Letter Writer",
+    "platform": "iOS",
+    "description": "An AI-powered productivity tool that acts as an assistant to help users draft professional emails and write letters.",
+    "link": "https://apps.apple.com/pk/app/ai-email-writer-letter-writer/id6739558115",
+    "iconFile": "assets/icons/ai_email_writer___letter_writer.png"
+  },
+  {
+    "name": "AI Chatbot & Chat Assistant",
+    "platform": "iOS",
+    "description": "A virtual assistant application utilizing advanced AI technology to act as a conversational chatbot.",
+    "link": "https://apps.apple.com/pk/app/ai-chatbot-chat-assistant/id6449083566",
+    "iconFile": "assets/icons/ai_chatbot___chat_assistant.png"
+  },
+  {
+    "name": "Form for Google Forms & Docs",
+    "platform": "iOS",
+    "description": "A mobile utility tool designed to help users create, manage, edit, and share Google Forms and Google Docs.",
+    "link": "https://apps.apple.com/kw/app/form-for-google-forms-docs/id6502432790",
+    "iconFile": "assets/icons/form_for_google_forms___docs.png"
+  },
+  {
+    "name": "Brushes for Procreate Artbox",
+    "platform": "iOS",
+    "description": "An art and design application offering a vast, custom collection of premium brushes and creative assets.",
+    "link": "https://apps.apple.com/pk/app/brushes-for-procreate-artbox/id6740813839",
+    "iconFile": "assets/icons/brushes_for_procreate_artbox.png"
+  },
+  {
+    "name": "Quiz AI for Google Classroom",
+    "platform": "iOS",
+    "description": "An educational tool that leverages artificial intelligence to automatically generate and manage interactive quizzes.",
+    "link": "https://apps.apple.com/hr/app/quiz-ai-for-google-classroom/id6502432246",
+    "iconFile": "assets/icons/quiz_ai_for_google_classroom.png"
+  },
+  {
+    "name": "Form for Google Forms & Docs",
+    "platform": "Mac",
+    "description": "The macOS version of the utility app to seamlessly create, fill out, and manage Google Forms and Docs natively on a Mac.",
+    "link": "https://apps.apple.com/hr/app/form-for-google-forms-docs/id6502432872?mt=12",
+    "iconFile": "assets/icons/form_for_google_forms___docs.png"
+  },
+  {
+    "name": "PDF Photos: Photo to PDF",
+    "platform": "Mac",
+    "description": "A macOS application that seamlessly converts images, scans, and photo collections into organized, high-quality PDF documents.",
+    "link": "https://apps.apple.com/pk/app/pdf-photos-photo-to-pdf/id6642648347?mt=12",
+    "iconFile": "assets/icons/pdf_photos__photo_to_pdf.png"
+  },
+  {
+    "name": "Smart Printer for HP Printer",
+    "platform": "Mac",
+    "description": "A Mac-optimized printing tool tailored specifically to control print jobs and scan physical documents via HP printers.",
+    "link": "https://apps.apple.com/us/app/smart-printer-for-hp-printer/id6740324349?mt=12",
+    "iconFile": "assets/icons/smart_printer_for_hp_printer.png"
+  },
+  {
+    "name": "Quiz AI for Google Classroom",
+    "platform": "Mac",
+    "description": "The macOS desktop iteration of the AI Quiz application, designed to effortlessly generate and sync educational assessments.",
+    "link": "https://apps.apple.com/hr/app/quiz-ai-for-google-classroom/id6502432627?mt=12",
+    "iconFile": "assets/icons/quiz_ai_for_google_classroom.png"
+  },
+  {
+    "name": "Document Editor: Edit Docs",
+    "platform": "Mac",
+    "description": "A comprehensive macOS application meant for creating, modifying, and formatting Word documents (.docx) and other standard text files.",
+    "link": "https://apps.apple.com/pk/app/document-editor-edit-docs/id6758437618?mt=12",
+    "iconFile": "assets/icons/document_editor__edit_docs.png"
+  },
+  {
+    "name": "Email Cleaner: Clean Inbox",
+    "platform": "Mac",
+    "description": "A Mac desktop version of the email cleanup utility built to help users quickly declutter their inboxes.",
+    "link": "https://apps.apple.com/jm/app/email-cleaner-clean-inbox/id6752381226?mt=12",
+    "iconFile": "assets/icons/email_cleaner__clean_inbox.png"
+  },
+  {
+    "name": "AI Email Writer & Letter Writer",
+    "platform": "Mac",
+    "description": "A Mac application featuring AI-powered writing assistance to help professionals easily compose context-aware letters.",
+    "link": "https://apps.apple.com/pk/app/ai-email-writer-letter-writer/id6739558141?mt=12",
+    "iconFile": "assets/icons/ai_email_writer___letter_writer.png"
+  },
+  {
+    "name": "iPrint for Epson Printer",
+    "platform": "Mac",
+    "description": "A dedicated, lightweight macOS printing application designed to connect to and reliably manage wireless printing jobs specifically for Epson printers.",
+    "link": "https://apps.apple.com/hr/app/iprint-for-epson-printer/id6754627971?mt=12",
+    "iconFile": "assets/icons/iprint_for_epson_printer.png"
+  },
+  {
+    "name": "Fax App: Send Fax from Desktop",
+    "platform": "Mac",
+    "description": "A convenient macOS utility that acts as a digital fax machine, allowing users to safely send faxes straight from their desktop.",
+    "link": "https://apps.apple.com/hr/app/fax-app-send-fax-from-desktop/id6755137849?mt=12",
+    "iconFile": "assets/icons/fax_app__send_fax_from_desktop.png"
+  },
+  {
+    "name": "MailPro: Email App for Gmail",
+    "platform": "Mac",
+    "description": "A dedicated, highly-optimized desktop email client tailored specifically for navigating and managing Gmail accounts smoothly on macOS.",
+    "link": "https://apps.apple.com/jm/app/mailpro-email-app-for-gmail/id6756658450?mt=12",
+    "iconFile": "assets/icons/mailpro__email_app_for_gmail.png"
+  }
+]
