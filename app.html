@@ -7,18 +7,21 @@
     <title>App Details — Umer Shoukat</title>
     <meta name="description" content="App details from the portfolio of Umer Shoukat, iOS & macOS engineer.">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <!-- Set theme before paint to avoid a flash of the wrong colors -->
+    <script>(function () { try { var t = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); document.documentElement.setAttribute('data-theme', t); } catch (e) { } })();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles.css?v=20">
+    <link rel="stylesheet" href="./styles.css?v=21">
 </head>
 
 <body class="app-detail-page">
     <nav class="detail-nav">
         <a href="index.html#work" class="btn-back"><i class='bx bx-left-arrow-alt'></i> Back to portfolio</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch theme"><i class='bx bx-moon'></i></button>
     </nav>
 
     <main id="app-content-container" class="detail-container">
@@ -40,8 +43,8 @@
         </div>
     </footer>
 
-    <script src="./script.js?v=20"></script>
-    <script src="./app.js?v=20"></script>
+    <script src="./script.js?v=21"></script>
+    <script src="./app.js?v=21"></script>
 </body>
 
 </html>

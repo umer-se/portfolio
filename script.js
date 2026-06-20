@@ -283,6 +283,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+    // ----- Theme toggle (works on both index and detail pages) -----
+    // The initial data-theme is set by the inline <head> script to avoid FOUC.
+    const themeToggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    function syncThemeIcon() {
+        if (!themeToggle) return;
+        const dark = root.getAttribute('data-theme') === 'dark';
+        const icon = themeToggle.querySelector('i');
+        if (icon) icon.className = dark ? 'bx bx-sun' : 'bx bx-moon';
+        themeToggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    syncThemeIcon();
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            root.classList.add('theme-animating');
+            root.setAttribute('data-theme', next);
+            try { localStorage.setItem('theme', next); } catch (e) { }
+            syncThemeIcon();
+            window.setTimeout(() => root.classList.remove('theme-animating'), 400);
+        });
+    }
+
     // ----- Mobile nav toggle -----
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.querySelector('.nav-links');
