@@ -4,214 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umer Shoukat - iOS & Mac Engineer Portfolio</title>
+    <title>Umer Shoukat — iOS &amp; macOS Engineer</title>
     <meta name="description"
-        content="Portfolio of Umer Shoukat, specializing in native iOS and Mac applications. Showcasing over 19+ applications with beautiful UI and rock-solid architecture.">
-    <!-- Google Fonts: Space Grotesk for headings, Archivo for body -->
+        content="Umer Shoukat is an iOS &amp; macOS engineer who has shipped 19+ native apps to the App Store. Swift, SwiftUI, AppKit, UIKit, and deep Google API integrations.">
+    <meta name="author" content="Umer Shoukat">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Umer Shoukat — iOS &amp; macOS Engineer">
+    <meta property="og:description" content="19+ native iOS &amp; macOS apps shipped to the App Store.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/profile_img.jpg">
+
+    <!-- Fonts: Fraunces (display serif), Hanken Grotesk (body), JetBrains Mono (labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-    <!-- Boxicons for elegant icons -->
+    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles.css?v=16">
+    <link rel="stylesheet" href="./styles.css?v=20">
 </head>
 
 <body>
-    <!-- Premium App Details Modal -->
-    <div class="modal-overlay" id="app-modal">
-        <div class="modal-content glass-card">
-            <button class="modal-close" id="modal-close"><i class='bx bx-x'></i></button>
-
+    <!-- ===== App Details Modal ===== -->
+    <div class="modal-overlay" id="app-modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Close"><i class='bx bx-x'></i></button>
             <div class="modal-header">
-                <div class="modal-icon-wrapper" id="modal-icon"></div>
+                <div class="modal-icon" id="modal-icon"></div>
                 <div class="modal-title-group">
                     <h3 id="modal-title">App Title</h3>
-                    <span id="modal-platform" class="app-platform-modal">iOS</span>
+                    <span id="modal-platform" class="platform-badge">iOS</span>
                 </div>
             </div>
-
-            <div class="modal-screenshots" id="modal-screenshots">
-                <!-- Screenshots injected via JS -->
-            </div>
-
+            <div class="modal-screenshots" id="modal-screenshots"></div>
             <div class="modal-body">
-                <p id="modal-desc">App description goes here.</p>
-                <a href="#" target="_blank" id="modal-link" class="btn btn-primary">
-                    <i class='bx bxl-apple'></i> View on App Store
+                <p id="modal-desc">App description.</p>
+                <a href="#" target="_blank" rel="noopener" id="modal-link" class="btn btn-primary">
+                    <i class='bx bxl-apple'></i> View on the App Store
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="background-effects">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-
+    <!-- ===== Navbar ===== -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Portfolio</a>
+        <div class="nav-inner">
+            <a href="#home" class="brand">US<span class="brand-dot">.</span></a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#contact" class="btn btn-ghost nav-cta">Get in touch</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><i class='bx bx-menu'></i></button>
         </div>
     </nav>
 
+    <!-- ===== Hero ===== -->
     <header class="hero" id="home">
-        <div class="hero-content">
-            <p class="greeting">Hello, I'm</p>
-            <h1 class="title">Umer Shoukat</h1>
-            <h2 class="subtitle">iOS & macOS Developer <span class="highlight">.</span></h2>
-            <p class="bio-short">
-                I’m an iOS and macOS developer focused on building fast, reliable native apps for the Apple ecosystem. I
-                work primarily with Swift and have hands-on experience with SwiftUI, AppKit, UIKit, and Cocoa
-                frameworks. My goal is to create apps that feel simple, polished, and intuitive to use.
-
-                I enjoy working with designers and cross-functional teams to turn ideas into well-built products with
-                strong UX/UI. I’m always looking to contribute to teams that care about quality, performance, and
-                thoughtful development.
-            </p>
-            <div class="hero-actions">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="https://www.linkedin.com/in/umershoukat-a54004287" target="_blank" class="btn btn-secondary">
-                    <i class='bx bxl-linkedin-square'></i> LinkedIn
-                </a>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow">iOS &amp; macOS Engineer · Pakistan</p>
+                <h1 class="hero-title">Umer<br>Shoukat<span class="title-mark">.</span></h1>
+                <p class="hero-lead">
+                    I build fast, reliable native apps for the Apple ecosystem — in Swift, SwiftUI,
+                    UIKit and AppKit. <strong>19+ apps shipped</strong> to the App Store, from
+                    productivity tools to full Google-API clients.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View my work <i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="https://www.linkedin.com/in/umershoukat-a54004287" target="_blank" rel="noopener"
+                        class="btn btn-ghost"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
+                </div>
+                <dl class="hero-stats">
+                    <div class="stat">
+                        <dt>19+</dt>
+                        <dd>Apps on the<br>App Store</dd>
+                    </div>
+                    <div class="stat">
+                        <dt>3+ yrs</dt>
+                        <dd>Shipping native<br>Apple apps</dd>
+                    </div>
+                    <div class="stat">
+                        <dt>iOS · Mac</dt>
+                        <dd>Cross-platform<br>with Catalyst</dd>
+                    </div>
+                </dl>
             </div>
-
-            <div class="hero-stats left-aligned-stats">
-                <div class="stat-item">
-                    <h3>19+</h3>
-                    <p>Live Apps</p>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <img src="./assets/profile_img.jpg" alt="Portrait of Umer Shoukat" class="portrait" width="520"
+                        height="640">
+                    <span class="portrait-tag"><i class='bx bxl-apple'></i> Swift since 2023</span>
                 </div>
-                <div class="stat-item">
-                    <h3>iOS</h3>
-                    <p>Native Core</p>
-                </div>
-                <div class="stat-item">
-                    <h3>macOS</h3>
-                    <p>Native Apps</p>
-                </div>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="hero-image-wrapper">
-                <img src="./assets/profile_img.jpg" alt="Umer Shoukat Profile" class="hero-profile-img">
             </div>
         </div>
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <span>Scroll</span><i class='bx bx-down-arrow-alt'></i>
+        </a>
     </header>
 
-    <section class="section about-section" id="about">
-        <h2 class="section-title">About Me <span class="highlight">.</span></h2>
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+        <div class="section-head">
+            <p class="eyebrow">01 — About</p>
+            <h2 class="section-title">A native-first engineer who likes things <em>polished.</em></h2>
+        </div>
         <div class="about-grid">
-            <div class="about-text glass-card">
+            <div class="about-prose">
                 <p>
-                    I graduated in Software Engineering in 2020 and began my professional journey in Apple platform
-                    development in early 2023. Since then, I’ve focused on building and shipping production-ready iOS
-                    and macOS applications with a strong emphasis on native performance and clean architecture.
-                    <br><br>My early work centered around deep Google API integrations — including Google Forms, Drive,
-                    and Gmail — where I built full-featured iOS apps and later expanded them to macOS using Mac
-                    Catalyst. These applications remain live on the App Store and continue to evolve.<br><br>Over time,
-                    I expanded into document-focused applications, developing PDF tools and working with formats such as
-                    DOCX and XLS to build practical file management and editing solutions. Most recently, I’ve been
-                    leading the development of a full-featured Gmail client for macOS, with ongoing integrations for
-                    Calendar and Contacts APIs. <br><br>Outside of development, I enjoy playing indie games and
-                    occasionally badminton — interests that keep me curious, competitive, and always learning.
-
+                    I graduated in Computer Science in 2020 and started building for Apple platforms in
+                    early 2023. Since then I've focused on shipping production iOS and macOS apps with a
+                    strong bias toward native performance and clean architecture.
                 </p>
-                <div class="skills-container" style="gap: 0.8rem; margin-top: 2.5rem;">
-                    <div class="skill-tag">Swift & SwiftUI</div>
-                    <div class="skill-tag">UIKit</div>
-                    <div class="skill-tag">AppKit</div>
-                    <div class="skill-tag">Cocoa</div>
-                    <div class="skill-tag">REST APIs</div>
-                    <div class="skill-tag">MVC / MVVM</div>
-                    <div class="skill-tag">Mac Catalyst</div>
-                    <div class="skill-tag"
-                        style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255,255,255,0.1); color: var(--text-secondary);">
-                        Objective-C (Beginner)</div>
-                </div>
+                <p>
+                    My early work centred on deep Google API integrations — Forms, Drive and Gmail — where
+                    I built full-featured iOS apps and extended them to macOS with Mac Catalyst. Those apps
+                    are still live and still evolving.
+                </p>
+                <p>
+                    From there I moved into document tooling: PDF utilities and editors that handle formats
+                    like DOCX and XLS. Most recently I shipped <strong>MailPro</strong>, a full Gmail client
+                    for macOS, with Calendar and Contacts integrations on the way.
+                </p>
+                <p class="about-aside">
+                    Away from the keyboard you'll find me playing indie games or the odd game of badminton —
+                    both of which keep me curious and competitive.
+                </p>
             </div>
-            <div class="experience-timeline glass-card" id="experience">
-                <h3>Work Experience</h3>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>iOS Engineer</h4>
-                        <p class="company">Code Gradients <span>• Jun 2023 - Present</span></p>
-                        <p class="desc">Develop and maintain native iOS and macOS applications using Swift, SwiftUI,
-                            UIKit, and AppKit. Lead the architecture and implementation of production-ready apps
-                            integrating Google APIs including Forms, Drive, and Gmail.<br><br>Built and shipped
-                            full-featured Google Forms applications for iOS and Mac Catalyst, currently live on the App
-                            Store. Designed scalable REST API network layers, handled OAuth authentication flows, and
-                            optimized data synchronization for performance and reliability.<br><br>Expanded into
-                            document-based applications, developing PDF tools and file handling solutions for formats
-                            such as DOCX and XLS. Currently leading development of a full-featured Gmail client for
-                            macOS, with ongoing integration of Calendar and Contacts APIs.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Software Engineer Intern</h4>
-                        <p class="company">Code Gradients <span>• Feb 2023 - May 2023</span></p>
-                        <p class="desc">Contributed to native iOS and macOS application development using UIKit and
-                            AppKit. Assisted in UI implementation, REST API integration, and debugging complex interface
-                            issues.<br><br>Worked with MVC architecture, integrated third-party dependencies using
-                            CocoaPods, and supported UI/UX prototyping and refinement during early product iterations.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Education | BS Computer Science</h4>
-                        <p class="company">COMSATS Institute of Information and Technology <span>• 2016 - 2020</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <aside class="about-skills">
+                <h3 class="mono-label">Toolbox</h3>
+                <ul class="skill-list">
+                    <li>Swift &amp; SwiftUI</li>
+                    <li>UIKit</li>
+                    <li>AppKit &amp; Cocoa</li>
+                    <li>Mac Catalyst</li>
+                    <li>Core Data</li>
+                    <li>REST APIs &amp; OAuth</li>
+                    <li>MVC / MVVM</li>
+                    <li>App Store Connect</li>
+                    <li class="skill-muted">Objective-C</li>
+                </ul>
+            </aside>
         </div>
     </section>
 
-    <section class="section portfolio-section" id="portfolio">
-        <div class="portfolio-header">
-            <h2 class="section-title">Featured Apps <span class="highlight">.</span></h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All Apps</button>
-                <button class="filter-btn" data-filter="iOS">iOS Only</button>
-                <button class="filter-btn" data-filter="Mac">Mac Only</button>
-            </div>
+    <!-- ===== Experience ===== -->
+    <section class="section experience" id="experience">
+        <div class="section-head">
+            <p class="eyebrow">02 — Experience</p>
+            <h2 class="section-title">Where I've been building.</h2>
         </div>
-
-        <div class="portfolio-grid" id="portfolio-container">
-            <!-- App cards will be injected here via JavaScript -->
+        <div class="timeline">
+            <article class="timeline-row">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Jun 2023 — Present</span>
+                    <span class="timeline-org">Code Gradients</span>
+                </div>
+                <div class="timeline-body">
+                    <h3>iOS &amp; macOS Engineer</h3>
+                    <p>
+                        Design and ship native iOS and macOS apps in Swift, SwiftUI, UIKit and AppKit.
+                        Led architecture for production apps built on Google APIs — Forms, Drive and Gmail —
+                        including Mac Catalyst ports now live on the App Store.
+                    </p>
+                    <p>
+                        Built scalable REST networking layers, handled OAuth flows, and tuned data
+                        synchronisation for reliability. Expanded into document tooling (PDF, DOCX, XLS) and
+                        most recently shipped a full-featured macOS Gmail client with Calendar and Contacts
+                        integrations underway.
+                    </p>
+                </div>
+            </article>
+            <article class="timeline-row">
+                <div class="timeline-meta">
+                    <span class="timeline-date">Feb 2023 — May 2023</span>
+                    <span class="timeline-org">Code Gradients</span>
+                </div>
+                <div class="timeline-body">
+                    <h3>Software Engineer Intern</h3>
+                    <p>
+                        Contributed to native iOS and macOS development with UIKit and AppKit — UI
+                        implementation, REST integration and debugging complex interface issues. Worked in an
+                        MVC codebase, integrated dependencies via CocoaPods, and supported UI/UX prototyping
+                        through early product iterations.
+                    </p>
+                </div>
+            </article>
+            <article class="timeline-row">
+                <div class="timeline-meta">
+                    <span class="timeline-date">2016 — 2020</span>
+                    <span class="timeline-org">COMSATS</span>
+                </div>
+                <div class="timeline-body">
+                    <h3>BS, Computer Science</h3>
+                    <p>COMSATS Institute of Information and Technology.</p>
+                </div>
+            </article>
         </div>
     </section>
 
+    <!-- ===== Work / Apps ===== -->
+    <section class="section work" id="work">
+        <div class="section-head work-head">
+            <div>
+                <p class="eyebrow">03 — Selected work</p>
+                <h2 class="section-title">Apps on the App Store.</h2>
+            </div>
+            <div class="filters" role="tablist" aria-label="Filter apps by platform">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="iOS">iOS</button>
+                <button class="filter-btn" data-filter="Mac">Mac</button>
+            </div>
+        </div>
+        <div class="work-grid" id="portfolio-container">
+            <!-- App cards injected by script.js -->
+        </div>
+    </section>
+
+    <!-- ===== Contact / Footer ===== -->
     <footer class="footer" id="contact">
-        <div class="footer-content">
-            <h2>Let's work together</h2>
-            <p>Always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-            <div class="contact-links">
-                <a href="mailto:umershoukat.se@gmail.com" class="contact-card glass-card">
-                    <i class='bx bx-envelope'></i>
-                    <span>Email Me</span>
-                </a>
-                <a href="https://www.linkedin.com/in/umer-shoukat-a54004287/" target="_blank"
-                    class="contact-card glass-card">
-                    <i class='bx bxl-linkedin'></i>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
+        <p class="eyebrow">04 — Contact</p>
+        <h2 class="footer-title">Let's build something<br><em>worth shipping.</em></h2>
+        <p class="footer-lead">
+            Open to iOS / macOS engineering roles and freelance collaborations. The fastest way to
+            reach me is email.
+        </p>
+        <div class="footer-actions">
+            <a href="mailto:umershoukat.se@gmail.com" class="btn btn-primary"><i class='bx bx-envelope'></i> umershoukat.se@gmail.com</a>
+            <a href="https://www.linkedin.com/in/umershoukat-a54004287" target="_blank" rel="noopener"
+                class="btn btn-ghost"><i class='bx bxl-linkedin'></i> LinkedIn</a>
         </div>
-        <!-- Load the Data First, then the App Logic -->
-        <script src="./script.js?v=11"></script>
+        <div class="footer-base">
+            <span>© <span id="year">2026</span> Umer Shoukat</span>
+            <span>Designed &amp; built natively-minded · Rahim Yar Khan, PK</span>
+        </div>
+    </footer>
+
+    <script src="./script.js?v=20"></script>
 </body>
 
 </html>

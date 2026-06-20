@@ -33,7 +33,7 @@ const apps = [
     {
         "name": "Smart Printer & Scanner Mobile",
         "platform": "iOS",
-        "description": "A mobile application designed to help users easily print and scan documents smartly and efficiently.",
+        "description": "A native iOS utility that discovers network printers over Bonjour/AirPrint and manages print jobs and document scanning smartly and efficiently.",
         "link": "https://apps.apple.com/kw/app/smart-printer-scanner-mobile/id6741894309",
         "iconFile": "assets/icons/smart_printer___scanner_mobile_icon.jpg",
         "screenshots": [
@@ -48,7 +48,7 @@ const apps = [
     {
         "name": "QR Code Reader: Scan & Create",
         "platform": "iOS",
-        "description": "A utility app that allows users to quickly scan, read, and create their own custom QR codes.",
+        "description": "A fast, native utility that lets users scan, read and generate their own custom QR codes in a single tap.",
         "link": "https://apps.apple.com/pk/app/qr-code-reader-scan-create/id1537745547",
         "iconFile": "assets/icons/qr_code_reader__scan___create_icon.jpg",
         "screenshots": [
@@ -63,7 +63,7 @@ const apps = [
     {
         "name": "AI Email Writer & Letter Writer",
         "platform": "iOS",
-        "description": "An AI-powered productivity tool that acts as an assistant to help users draft professional emails and write letters.",
+        "description": "An AI-powered writing assistant that helps users draft professional emails and letters, built with SwiftUI and REST API integrations.",
         "link": "https://apps.apple.com/pk/app/ai-email-writer-letter-writer/id6739558115",
         "iconFile": "assets/icons/ai_email_writer___letter_writer_icon.png",
         "screenshots": [
@@ -78,7 +78,7 @@ const apps = [
     {
         "name": "AI Chatbot & Chat Assistant",
         "platform": "iOS",
-        "description": "A virtual assistant application utilizing advanced AI technology to act as a conversational chatbot.",
+        "description": "A conversational AI assistant built natively for iOS, giving users a fast, on-the-go chatbot experience.",
         "link": "https://apps.apple.com/pk/app/ai-chatbot-chat-assistant/id6449083566",
         "iconFile": "assets/icons/ai_chatbot___chat_assistant_icon.png",
         "screenshots": [
@@ -92,7 +92,7 @@ const apps = [
     {
         "name": "Form for Google Forms & Docs",
         "platform": "iOS",
-        "description": "A mobile utility tool designed to help users create, manage, edit, and share Google Forms and Google Docs.",
+        "description": "A native iOS client for creating, managing, editing and sharing Google Forms and Docs, powered by deep Google API and OAuth integrations.",
         "link": "https://apps.apple.com/kw/app/form-for-google-forms-docs/id6502432790",
         "iconFile": "assets/icons/form_for_google_forms___docs_icon.png",
         "screenshots": [
@@ -107,7 +107,7 @@ const apps = [
     {
         "name": "Brushes for Procreate Artbox",
         "platform": "iOS",
-        "description": "An art and design application offering a vast, custom collection of premium brushes and creative assets.",
+        "description": "An art and design app offering a large, curated collection of premium brushes and creative assets for Procreate.",
         "link": "https://apps.apple.com/pk/app/brushes-for-procreate-artbox/id6740813839",
         "iconFile": "assets/icons/brushes_for_procreate_artbox_icon.png",
         "screenshots": [
@@ -122,7 +122,7 @@ const apps = [
     {
         "name": "Quiz AI for Google Classroom",
         "platform": "iOS",
-        "description": "An educational tool that leverages artificial intelligence to automatically generate and manage interactive quizzes.",
+        "description": "An education tool that uses AI to generate and manage interactive quizzes, syncing directly into Google Classroom.",
         "link": "https://apps.apple.com/hr/app/quiz-ai-for-google-classroom/id6502432246",
         "iconFile": "assets/icons/quiz_ai_for_google_classroom_icon.png",
         "screenshots": [
@@ -137,7 +137,7 @@ const apps = [
     {
         "name": "Form for Google Forms & Docs Mac",
         "platform": "Mac",
-        "description": "A true native macOS application built with AppKit and Cocoa, providing a blazing fast desktop experience to seamlessly manage Google Forms and Docs via REST APIs.",
+        "description": "A true native macOS app built with AppKit and Cocoa, bringing a fast desktop experience for managing Google Forms and Docs over REST APIs.",
         "link": "https://apps.apple.com/hr/app/form-for-google-forms-docs/id6502432872?mt=12",
         "iconFile": "assets/icons/form_for_google_forms___docs_mac_icon.png",
         "screenshots": [
@@ -150,7 +150,7 @@ const apps = [
     {
         "name": "PDF Photos: Photo to PDF",
         "platform": "Mac",
-        "description": "A macOS application that seamlessly converts images, scans, and photo collections into organized, high-quality PDF documents.",
+        "description": "A macOS app that converts images, scans and photo collections into organized, high-quality PDF documents.",
         "link": "https://apps.apple.com/pk/app/pdf-photos-photo-to-pdf/id6642648347?mt=12",
         "iconFile": "assets/icons/pdf_photos__photo_to_pdf_icon.png",
         "screenshots": [
@@ -163,7 +163,7 @@ const apps = [
     {
         "name": "Smart Printer for HP Printer",
         "platform": "Mac",
-        "description": "A Mac-optimized printing tool tailored specifically to control print jobs and scan physical documents via HP printers.",
+        "description": "A Mac-native printing tool tailored to control print jobs and scan physical documents through HP printers.",
         "link": "https://apps.apple.com/us/app/smart-printer-for-hp-printer/id6740324349?mt=12",
         "iconFile": "assets/icons/smart_printer_for_hp_printer_icon.png",
         "screenshots": [
@@ -176,7 +176,7 @@ const apps = [
     {
         "name": "Quiz AI for Google Classroom Mac",
         "platform": "Mac",
-        "description": "A native macOS desktop application designed with AppKit to effortlessly generate and sync educational assessments directly into Google Classroom using seamless API bridging.",
+        "description": "A native macOS app built with AppKit to generate and sync educational assessments directly into Google Classroom via seamless API bridging.",
         "link": "https://apps.apple.com/hr/app/quiz-ai-for-google-classroom/id6502432627?mt=12",
         "iconFile": "assets/icons/quiz_ai_for_google_classroom_mac_icon.png",
         "screenshots": [
@@ -189,7 +189,7 @@ const apps = [
     {
         "name": "Document Editor: Edit Docs",
         "platform": "Mac",
-        "description": "A comprehensive macOS application meant for creating, modifying, and formatting Word documents (.docx) and other standard text files.",
+        "description": "A comprehensive macOS app for creating, editing and formatting Word documents (.docx) and other standard text files natively with AppKit and TextKit.",
         "link": "https://apps.apple.com/pk/app/document-editor-edit-docs/id6758437618?mt=12",
         "iconFile": "assets/icons/document_editor__edit_docs_icon.jpg",
         "screenshots": [
@@ -202,7 +202,7 @@ const apps = [
     {
         "name": "Email Cleaner: Clean Inbox",
         "platform": "Mac",
-        "description": "A Mac desktop version of the email cleanup utility built to help users quickly declutter their inboxes.",
+        "description": "The macOS desktop version of the email cleanup utility, built to help users quickly declutter and organize their inboxes.",
         "link": "https://apps.apple.com/jm/app/email-cleaner-clean-inbox/id6752381226?mt=12",
         "iconFile": "assets/icons/email_cleaner__clean_inbox_icon.png",
         "screenshots": [
@@ -215,7 +215,7 @@ const apps = [
     {
         "name": "AI Email Writer & Letter Writer Mac",
         "platform": "Mac",
-        "description": "A Mac application featuring AI-powered writing assistance to help professionals easily compose context-aware letters.",
+        "description": "A macOS app with AI-powered writing assistance that helps professionals compose context-aware emails and letters.",
         "link": "https://apps.apple.com/pk/app/ai-email-writer-letter-writer/id6739558141?mt=12",
         "iconFile": "assets/icons/ai_email_writer___letter_writer_mac_icon.png",
         "screenshots": [
@@ -228,7 +228,7 @@ const apps = [
     {
         "name": "iPrint for Epson Printer",
         "platform": "Mac",
-        "description": "A dedicated, lightweight macOS printing application designed to connect to and reliably manage wireless printing jobs specifically for Epson printers.",
+        "description": "A lightweight, dedicated macOS printing app that connects to and reliably manages wireless print jobs for Epson printers.",
         "link": "https://apps.apple.com/hr/app/iprint-for-epson-printer/id6754627971?mt=12",
         "iconFile": "assets/icons/iprint_for_epson_printer_icon.jpg",
         "screenshots": [
@@ -241,7 +241,7 @@ const apps = [
     {
         "name": "Fax App: Send Fax from Desktop",
         "platform": "Mac",
-        "description": "A convenient macOS utility that acts as a digital fax machine, allowing users to safely send faxes straight from their desktop.",
+        "description": "A convenient macOS utility that acts as a digital fax machine, letting users send faxes straight from their desktop.",
         "link": "https://apps.apple.com/hr/app/fax-app-send-fax-from-desktop/id6755137849?mt=12",
         "iconFile": "assets/icons/fax_app__send_fax_from_desktop_icon.jpg",
         "screenshots": [
@@ -254,7 +254,7 @@ const apps = [
     {
         "name": "MailPro: Email App for Gmail",
         "platform": "Mac",
-        "description": "A dedicated, highly-optimized desktop email client tailored specifically for navigating and managing Gmail accounts smoothly on macOS.",
+        "description": "A dedicated, highly-optimized native macOS email client built specifically for managing Gmail accounts smoothly, with Calendar and Contacts integrations in progress.",
         "link": "https://apps.apple.com/jm/app/mailpro-email-app-for-gmail/id6756658450?mt=12",
         "iconFile": "assets/icons/mailpro__email_app_for_gmail_icon.jpg",
         "screenshots": [
@@ -266,63 +266,83 @@ const apps = [
     }
 ];
 
-// Make apps accessible globally
+// === DATA END — logic below is preserved across scrapes ===
+
+// Expose for the detail page (app.js)
 window.portfolioApps = apps;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const portfolioContainer = document.getElementById('portfolio-container');
+// Small HTML-escape helper to keep injected text safe
+function esc(str) {
+    return String(str).replace(/[&<>"']/g, c => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+}
 
-    // Safety check: Only execute rendering logic if we are on the index page
-    if (!portfolioContainer) return;
+document.addEventListener('DOMContentLoaded', () => {
+    // ----- Current year in footer -----
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // ----- Mobile nav toggle -----
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+        navLinks.addEventListener('click', e => {
+            if (e.target.tagName === 'A') navLinks.classList.remove('show');
+        });
+    }
+
+    // ----- Smooth-scroll for in-page anchors -----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
+
+    // ----- Render apps grid (index page only) -----
+    const grid = document.getElementById('portfolio-container');
+    if (!grid) return;
 
     const filterBtns = document.querySelectorAll('.filter-btn');
-
-    // Render App Cards
-    function renderApps(filterType = 'all') {
-        portfolioContainer.innerHTML = '';
-
-        const filteredApps = filterType === 'all'
-            ? apps
-            : apps.filter(app => app.platform === filterType);
-
-        filteredApps.forEach(app => {
-            const card = document.createElement('div');
-            card.className = 'glass-card app-card';
-
-            const iconHtml = app.iconFile
-                ? `<img src="${app.iconFile}" alt="${app.name} icon" class="app-icon-img" />`
-                : `<i class='bx bx-mobile-alt' style="font-size:2rem; color:var(--accent)"></i>`;
-
-            // Redesigning to a premium dimensional layout
-            card.innerHTML = `
-                <div class="app-card-mesh"></div>
-                <span class="app-platform ${app.platform.toLowerCase()}">${app.platform}</span>
-                <div class="app-card-inner">
-                    <div class="app-header">
-                        <div class="app-icon-wrapper">
-                            ${iconHtml}
-                        </div>
-                    </div>
-                    <div class="app-content-wrapper">
-                        <h3 class="app-title">${app.name}</h3>
-                        <p class="app-desc">${app.description}</p>
-                    </div>
-                    <div class="app-card-footer">
-                        <div class="app-action-fab">
-                            <i class='bx bx-right-arrow-alt'></i>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            card.style.animation = 'fadeInUp 0.5s ease forwards';
-
-            // Add click listener to navigate to the dedicated App details page
-            card.addEventListener('click', () => {
-                window.location.href = `app.html?id=${encodeURIComponent(app.name)}`;
+    const revealObserver = ('IntersectionObserver' in window)
+        ? new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('in'); obs.unobserve(entry.target); }
             });
+        }, { threshold: 0.12 })
+        : null;
 
-            portfolioContainer.appendChild(card);
+    function cardMarkup(app) {
+        const icon = app.iconFile
+            ? `<div class="app-icon-wrapper"><img src="${esc(app.iconFile)}" alt="${esc(app.name)} icon" class="app-icon-img" loading="lazy" /></div>`
+            : `<div class="app-icon-fallback"><i class='bx bx-mobile-alt'></i></div>`;
+        return `
+            <div class="app-card-top">
+                ${icon}
+                <span class="platform-badge ${app.platform.toLowerCase()}">${esc(app.platform)}</span>
+            </div>
+            <h3 class="app-title">${esc(app.name)}</h3>
+            <p class="app-desc">${esc(app.description)}</p>
+            <div class="app-card-footer">
+                <span class="app-view">View details</span>
+                <span class="app-fab"><i class='bx bx-right-arrow-alt'></i></span>
+            </div>`;
+    }
+
+    function renderApps(filter = 'all') {
+        grid.innerHTML = '';
+        const list = filter === 'all' ? apps : apps.filter(a => a.platform === filter);
+        list.forEach((app, i) => {
+            const card = document.createElement('article');
+            card.className = 'app-card';
+            card.style.transitionDelay = `${Math.min(i, 8) * 45}ms`;
+            card.innerHTML = cardMarkup(app);
+            card.addEventListener('click', () => openModal(app));
+            grid.appendChild(card);
+            if (revealObserver) revealObserver.observe(card);
+            else card.classList.add('in');
         });
     }
 
@@ -336,12 +356,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+    // ----- Modal -----
+    const modal = document.getElementById('app-modal');
+    const modalIcon = document.getElementById('modal-icon');
+    const modalTitle = document.getElementById('modal-title');
+    const modalPlatform = document.getElementById('modal-platform');
+    const modalShots = document.getElementById('modal-screenshots');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalLink = document.getElementById('modal-link');
+    const modalClose = document.getElementById('modal-close');
+
+    function openModal(app) {
+        if (!modal) { window.location.href = `app.html?id=${encodeURIComponent(app.name)}`; return; }
+        modalIcon.innerHTML = app.iconFile
+            ? `<img src="${esc(app.iconFile)}" alt="${esc(app.name)} icon" />`
+            : `<i class='bx bx-mobile-alt'></i>`;
+        modalTitle.textContent = app.name;
+        modalPlatform.textContent = app.platform;
+        modalPlatform.className = `platform-badge ${app.platform.toLowerCase()}`;
+        modalDesc.textContent = app.description;
+        modalLink.href = app.link;
+        modalShots.innerHTML = (app.screenshots || [])
+            .map(s => `<img src="${esc(s)}" alt="Screenshot of ${esc(app.name)}" loading="lazy" />`).join('');
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (modal) {
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    }
 });

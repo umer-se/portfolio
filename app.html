@@ -4,53 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Details - Umer Shoukat</title>
-    <!-- Google Fonts: Space Grotesk for headings, Archivo for body -->
+    <title>App Details — Umer Shoukat</title>
+    <meta name="description" content="App details from the portfolio of Umer Shoukat, iOS & macOS engineer.">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-    <!-- Boxicons for elegant icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles.css?v=16">
+    <link rel="stylesheet" href="./styles.css?v=20">
 </head>
 
 <body class="app-detail-page">
-    <div class="background-effects">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="app-nav" style="max-width: 1100px; margin: 2rem auto 0; padding: 0 5%;">
-        <a href="index.html" class="btn-back"><i class='bx bx-left-arrow-alt'></i> Return to Portfolio</a>
+    <nav class="detail-nav">
+        <a href="index.html#work" class="btn-back"><i class='bx bx-left-arrow-alt'></i> Back to portfolio</a>
     </nav>
 
-    <!-- Main Content Injected Here -->
-    <main id="app-content-container" class="container fade-in-up" style="min-height: 60vh;">
+    <main id="app-content-container" class="detail-container">
         <div class="loading-state">
-            <i class='bx bx-loader-alt bx-spin'></i> Loading App Details...
+            <i class='bx bx-loader-alt bx-spin'></i> Loading app details…
         </div>
     </main>
 
     <footer class="footer">
-        <h2>Ready to build something <span class="highlight">amazing?</span></h2>
-        <p class="bio-short">Let's collaborate on your next big iOS or Mac application.</p>
-        <div class="contact-links" style="margin-top:2rem">
-            <a href="mailto:umershoukat.se@gmail.com" class="btn btn-primary"><i class='bx bx-envelope'></i> Email
-                Me</a>
-            <a href="index.html#portfolio" class="btn btn-secondary"><i class='bx bx-grid-alt'></i> View All Apps</a>
+        <p class="eyebrow">Contact</p>
+        <h2 class="footer-title">Let's build something<br><em>worth shipping.</em></h2>
+        <div class="footer-actions">
+            <a href="mailto:umershoukat.se@gmail.com" class="btn btn-primary"><i class='bx bx-envelope'></i> Email me</a>
+            <a href="index.html#work" class="btn btn-ghost"><i class='bx bx-grid-alt'></i> View all apps</a>
         </div>
-        <p style="margin-top: 4rem; color: var(--text-secondary); font-size: 0.8rem;">
-            &copy; 2024 Umer Shoukat. All rights reserved.
-        </p>
+        <div class="footer-base">
+            <span>© <span id="year">2026</span> Umer Shoukat</span>
+            <span>iOS &amp; macOS Engineer · Rahim Yar Khan, PK</span>
+        </div>
     </footer>
 
-    <!-- Load the Data First, then the App Logic -->
-    <script src="./script.js?v=16"></script>
-    <script src="./app.js?v=16"></script>
+    <script src="./script.js?v=20"></script>
+    <script src="./app.js?v=20"></script>
 </body>
 
 </html>

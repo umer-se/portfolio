@@ -1,72 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     const params = new URLSearchParams(window.location.search);
     const appId = params.get('id');
     const container = document.getElementById('app-content-container');
 
-    // Safety check for invalid routes
-    if (!appId || !window.portfolioApps) {
-        renderError(container);
-        return;
-    }
+    const escAttr = s => String(s).replace(/"/g, '&quot;');
 
-    // Find the specific app from our dynamic data array
+    if (!appId || !window.portfolioApps) { renderError(); return; }
+
     const app = window.portfolioApps.find(a => a.name === appId);
+    if (!app) { renderError(); return; }
 
-    if (!app) {
-        renderError(container);
-        return;
-    }
+    document.title = `${app.name} — Umer Shoukat`;
 
-    // Update Meta Title
-    document.title = `${app.name} - Umer Shoukat`;
-
-    // Render Premium App Hero
     const iconHtml = app.iconFile
-        ? `<img src="${app.iconFile}" alt="${app.name} icon" class="hero-app-icon" />`
-        : `<div class="hero-app-icon-placeholder"><i class='bx bx-mobile-alt'></i></div>`;
+        ? `<div class="detail-icon"><img src="${escAttr(app.iconFile)}" alt="${escAttr(app.name)} icon" /></div>`
+        : `<div class="detail-icon-fallback"><i class='bx bx-mobile-alt'></i></div>`;
 
-    const screenshotsHtml = app.screenshots && app.screenshots.length > 0
-        ? app.screenshots.map(s => `<img src="${s}" alt="Screenshot" class="hero-app-screenshot" loading="lazy" />`).join('')
-        : `<p style="color:var(--text-secondary)">No screenshots available for this application.</p>`;
+    const shotsHtml = (app.screenshots && app.screenshots.length)
+        ? app.screenshots.map(s => `<img src="${escAttr(s)}" alt="Screenshot of ${escAttr(app.name)}" loading="lazy" />`).join('')
+        : `<p class="gallery-empty">No screenshots available for this app.</p>`;
 
     container.innerHTML = `
-        <header class="app-detail-header">
-            <div class="app-detail-icon-box">
-                ${iconHtml}
-            </div>
-            <div class="app-detail-info">
-                <h1 class="highlight app-detail-title">${app.name}</h1>
-                <span class="app-platform-modal ${app.platform.toLowerCase()}" style="display:inline-block; margin-bottom: 1.5rem;">${app.platform}</span>
-                <div class="app-detail-actions">
-                    <a href="${app.link}" target="_blank" class="btn btn-primary btn-get">
-                        GET
+        <header class="detail-header">
+            ${iconHtml}
+            <div class="detail-info">
+                <h1 class="detail-title">${escAttr(app.name)}</h1>
+                <span class="platform-badge ${app.platform.toLowerCase()}">${escAttr(app.platform)}</span>
+                <div class="detail-actions">
+                    <a href="${escAttr(app.link)}" target="_blank" rel="noopener" class="btn btn-primary">
+                        <i class='bx bxl-apple'></i> View on the App Store
                     </a>
-                    <span class="app-detail-note">In-App Purchases</span>
+                    <span class="detail-note">Free · In-App Purchases</span>
                 </div>
-                <p class="app-detail-desc">${app.description.replace(/\n/g, '<br>')}</p>
+                <p class="detail-desc">${app.description.replace(/\n/g, '<br>')}</p>
             </div>
         </header>
-
-        <section class="app-gallery-section" style="margin-top: 4rem;">
-            <div class="gallery-scroll-container">
-                ${screenshotsHtml}
-            </div>
-        </section>
+        <section class="detail-gallery">${shotsHtml}</section>
     `;
 
-    // Trigger reveal physics
-    setTimeout(() => {
-        container.classList.add('visible');
-    }, 100);
+    requestAnimationFrame(() => container.classList.add('visible'));
 
-    function renderError(el) {
-        el.innerHTML = `
-            <div style="text-align: center; margin: 15vh 0;">
-                <h1 class="highlight" style="font-size: 3rem;">App Not Found</h1>
-                <p style="color: var(--text-secondary); margin: 2rem 0;">The application you are looking for could not be found or the link is invalid.</p>
-                <a href="index.html" class="btn btn-secondary">Return Home</a>
-            </div>
-        `;
-        el.classList.add('visible');
+    function renderError() {
+        container.innerHTML = `
+            <div style="text-align:center; padding: 14vh 0;">
+                <h1 class="detail-title" style="font-size: clamp(2rem,6vw,3.4rem);">App not found</h1>
+                <p style="color: var(--ink-soft); margin: 1.5rem 0 2rem;">
+                    The app you're looking for could not be found, or the link is invalid.
+                </p>
+                <a href="index.html#work" class="btn btn-ghost">Return to portfolio</a>
+            </div>`;
+        container.classList.add('visible');
     }
 });
